@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -23,4 +23,45 @@ a {
     display: block;
     outline: none;
     text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAVIGATION */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: #525252;
+    text-decoration: none;
+    transition:  color 0.1s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;
+}
+
+.nav__link:hover {
+    color: #000;
 }
