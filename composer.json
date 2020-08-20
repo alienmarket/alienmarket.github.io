@@ -1,5 +1,5 @@
 {
-    "name": "automattic/underscores",
+    "name": "alienmarket/alienmarket.github.io",
     "type": "wordpress-theme",
     "description": "Hi. I'm a starter theme called _s, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.",
     "keywords": [
@@ -10,7 +10,7 @@
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "Contributors",
+            "name": "Andrey",
             "homepage": "https://github.com/Automattic/_s/graphs/contributors"
         }
     ],
@@ -31,5 +31,10 @@
     "support": {
         "issues": "https://github.com/Automattic/_s/issues",
         "source": "https://github.com/Automattic/_s"
+
+    "autoload": {
+        "psr-4":{
+        "alienmarket/alienmarket.github.io"
+    }
     }
 }
