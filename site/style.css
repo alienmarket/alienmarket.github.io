@@ -1,0 +1,214 @@
+/*!
+Theme Name: AlienStore
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: alienstore
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+AlienStore is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+    - Normalize
+    - Box sizing
+# Base
+    - Typography
+    - Elements
+    - Links
+    - Forms
+## Layouts
+# Components
+    - Navigation
+    - Posts and pages
+    - Comments
+    - Widgets
+    - Media
+    - Captions
+    - Galleries
+# plugins
+    - Jetpack infinite scroll
+# Utilities
+    - Accessibility
+    - Alignments
+
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+
+/* Normalize
+--------------------------------------------- */
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+
+/* Document
+     ========================================================================== */
+
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #edeef0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    background-color: #edeef0;
+    box-shadow: 0px 0px 10px black;
+
+
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    height: 120px;
+}
+
+
+/* NAVIGATION */
+
+.nav-link{
+    align-items: center;
+    color: #555;
+    transition: color .5 linear;
+    transition: font-weight .1s ease;
+
+    position: static;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-link:hover {
+    color: #000;
+    font-weight: 600;
+
+}
+
+.nav *{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.nav ul,
+.nav ol{
+    list-style: none;
+}
+
+.nav > ul{
+    display: flex;
+
+}
+
+.nav >ul li a{
+    display: block;
+    box-sizing:border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #333;
+}
+
+.nav li > ul li a{
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+/* ВЫЕЗЖАЛКА */
+
+.nav li ul{
+    top: -9999em;
+
+    background-color: #edeef0;
+    position: absolute;
+    opacity: 0;
+    transition: .6s opacity;
+
+
+}
+
+.nav li:hover > ul{
+    top: 80px;
+    opacity: 1;
+    transition: .6s opacity;
+
+
+}
+
+
+/* КОНТЕНТ */
+
+.content_text {
+    margin-top: 110px;
+}
+
